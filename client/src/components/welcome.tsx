@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Title } from '@mantine/core';
+
 interface WelcomeProps {
   firstName: string;
   middleName?: string;
@@ -7,5 +9,5 @@ interface WelcomeProps {
 }
 
 export default function Welcome(props: WelcomeProps) {
-  return <h1>Hello, {props.firstName}</h1>;
+  return <Title>Hello, {props.firstName}</Title>;
 }
